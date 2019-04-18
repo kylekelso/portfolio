@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700");
+@import "libs/skel";
+@import "libs/vars";
+
+@include skel-breakpoints(
+  (
+    xlarge: "(max-width: 1680px)",
+    large: "(max-width: 1280px)",
+    medium: "(max-width: 980px)",
+    small: "(max-width: 736px)",
+    xsmall: "(max-width: 480px)",
+    xxsmall: "(max-width: 360px)",
+  )
+);
+
+@include skel-layout(
+  (
+    reset: "full",
+    boxModel: "border",
+  )
+);
+
+html {
+  background-color: $palette-bg;
+  color: $palette-font;
+}
+
+@import "layout/base";
+@import "layout/container";
+@import "layout/header";
+@import "layout/main";
+@import "layout/nav-button";

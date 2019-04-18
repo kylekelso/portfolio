@@ -1,0 +1,139 @@
+#header {
+  @include vendor("display", "flex");
+  @include vendor("flex-direction", "column");
+  @include vendor("align-items", "center");
+  @include vendor(
+    "transition",
+    (
+      "transform #{$duration-normal} ease-in-out",
+      "filter #{$duration-normal} ease-in-out",
+      "opacity #{$duration-normal} ease-in-out"
+    )
+  );
+
+  > * {
+    @include vendor("transition", "opacity #{$duration-normal} ease-in-out");
+    position: relative;
+    margin-top: 3.5rem;
+  }
+
+  > .title {
+    margin-top: 0;
+    max-width: 100%;
+
+    &:before,
+    &:after {
+      @include vendor(
+        "transition",
+        ("transform #{$duration-normal} ease-in-out")
+      );
+      display: block;
+      content: "";
+      border-style: solid;
+      border-color: $palette-font;
+      border-width: 0;
+      transform: scaleX(1);
+      border-bottom-width: $size-b-width;
+    }
+
+    div {
+      @include vendor(
+        "transition",
+        (
+          "max-height #{$duration-slow} ease",
+          "padding #{$duration-slow} ease",
+          "opacity #{$duration-normal} ease-in-out"
+        )
+      );
+      @include vendor("transition-delay", "0.25s");
+      padding: 3rem 2rem;
+      max-height: 40rem;
+      overflow: hidden;
+    }
+  }
+
+  nav {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -3.5rem;
+      left: calc(50% - #{$size-b-width * 1});
+      width: $size-b-width;
+      height: calc(3.5rem + 1px);
+      background: $palette-font;
+    }
+    ul {
+      @include vendor("display", "flex");
+      margin-bottom: 0;
+      list-style: none;
+      padding-left: 0;
+      border: solid $size-b-width $palette-font;
+      border-radius: $size-b-radius;
+
+      li {
+        padding-left: 0;
+        border-left: solid $size-b-width $palette-font;
+
+        &:first-child {
+          border-left: 0;
+        }
+
+        button {
+          width: 100%;
+          min-width: 7.5rem;
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    > * {
+      margin-top: 2rem;
+    }
+
+    nav {
+      &:before {
+        top: -2rem;
+        height: 2rem;
+      }
+    }
+
+    .title {
+      .inner {
+        padding: 2.5rem 1rem;
+      }
+      p {
+        line-height: 1.875;
+      }
+    }
+  }
+
+  @include breakpoint(xsmall) {
+    padding: 1.5rem 0;
+
+    .title {
+      .inner {
+        padding: 2.5rem 0;
+      }
+    }
+
+    nav {
+      ul {
+        @include vendor("flex-direction", "column");
+        min-width: 10rem;
+        max-width: 100%;
+
+        li {
+          border-left: 0;
+          border-top: solid $size-b-width $palette-font;
+          &:first-child {
+            border-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -34,4 +34,17 @@ button {
   &:active {
     background-color: $palette-active;
   }
+
+  &.close-btn {
+    box-shadow: none;
+    position: absolute;
+    padding: 12px 12px 0 12px;
+    height: 56px;
+    top: 0;
+    right: 0;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }

@@ -29,7 +29,8 @@ body {
   line-height: 1.65;
 }
 
-h1 {
+h1,
+h2 {
   color: $palette-font;
   font-weight: $font-weight;
   line-height: 1.5;
@@ -40,6 +41,17 @@ h1 {
     font-weight: $font-weight-bold;
     color: $palette-fg;
   }
+}
+
+h2 {
+  border-bottom: solid $size-b-width $palette-font;
+  font-weight: $font-weight-bold;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -ms-max-content;
+  width: max-content;
 }
 
 @include breakpoint(small) {

@@ -1,0 +1,50 @@
+#header {
+  .root.pageOpen & {
+    @include vendor("transform", "scale(0.95)");
+    @include vendor("filter", "blur(0.1rem)");
+    opacity: 0;
+  }
+
+  .root.loading & {
+    > * {
+      opacity: 0;
+    }
+
+    @include vendor("filter", "blur(0.125rem)");
+
+    .title:before,
+    .title:after {
+      transform: scaleX(0);
+    }
+
+    .content {
+      .inner {
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        opacity: 0;
+      }
+    }
+  }
+
+  &.transitioned {
+    display: none;
+  }
+}
+
+#main {
+  &.transitioned {
+    display: flex;
+  }
+
+  div {
+    &.active {
+      display: block !important;
+    }
+
+    &.active.transitioned {
+      @include vendor("transform", "translateY(0)");
+      opacity: 1;
+    }
+  }
+}

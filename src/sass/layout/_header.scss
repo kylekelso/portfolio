@@ -58,7 +58,7 @@
       display: block;
       position: absolute;
       top: -3.5rem;
-      left: calc(50% - #{$size-b-width * 1});
+      left: calc(50% - #{$size-b-width * 0.5});
       width: $size-b-width;
       height: calc(3.5rem + 1px);
       background: $palette-font;

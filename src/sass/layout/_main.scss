@@ -1,3 +1,39 @@
 #main {
+  @include vendor("flex-grow", "1");
+  @include vendor("flex-shrink", "1");
+  @include vendor("display", "flex");
+  @include vendor("align-items", "center");
+  @include vendor("justify-content", "center");
+  @include vendor("flex-direction", "column");
+  position: relative;
+  max-width: 100%;
+  z-index: 3;
   display: none;
+
+  div {
+    @include vendor("transform", "translateY(0.25rem)");
+    @include vendor(
+      "transition",
+      (
+        "opacity #{$duration-normal} ease-in-out",
+        "transform #{$duration-normal} ease-in-out"
+      )
+    );
+    display: none;
+    padding: 3.5rem 2.2rem 1.2rem;
+    position: relative;
+    width: 40rem;
+    max-width: 100%;
+    background-color: transparentize($palette-bg-dark, 0.25);
+    border-radius: $size-b-radius;
+    opacity: 0;
+
+    section {
+      margin-top: 1rem;
+      img {
+        border-radius: $size-b-radius;
+        width: 100%;
+      }
+    }
+  }
 }

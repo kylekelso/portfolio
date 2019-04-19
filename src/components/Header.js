@@ -1,7 +1,7 @@
 import React from "react"
 
-const Header = () => (
-  <header id="header">
+const Header = ({ pageOpen, timer }) => (
+  <header id="header" className={timer ? "transitioned" : ""}>
     <div className="title">
       <div className="inner">
         <h1>
@@ -13,22 +13,22 @@ const Header = () => (
     <nav>
       <ul>
         <li>
-          <button className="link" onClick={() => console.log("resume")}>
+          <button className="link" onClick={() => pageOpen("resume")}>
             Resume
           </button>
         </li>
         <li>
-          <button className="link" onClick={() => console.log("projects")}>
+          <button className="link" onClick={() => pageOpen("projects")}>
             Projects
           </button>
         </li>
         <li>
-          <button className="link" onClick={() => console.log("about")}>
+          <button className="link" onClick={() => pageOpen("about")}>
             About
           </button>
         </li>
         <li>
-          <button className="link" onClick={() => console.log("contact")}>
+          <button className="link" onClick={() => pageOpen("contact")}>
             Contact
           </button>
         </li>

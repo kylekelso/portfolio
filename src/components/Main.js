@@ -36,10 +36,24 @@ class Main extends React.Component {
           <h2>Projects</h2>
           {/* multiple sections for each project. Show image and technology used in each one. */}
           <section className="half">
-            {/* vote app */} Vote App Placeholder
+            {/* vote app */}
+            <a
+              href="http://voter.kyle-kelso.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voter - Voting and statistics
+            </a>
           </section>
           <section className="half">
-            {/* twitter clone app */} Twitter Clone App Placeholder
+            {/* twitter clone app */}
+            <a
+              href="http://warbler.kyle-kelso.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Warbler - A twitter clone
+            </a>
           </section>
         </div>
         <div

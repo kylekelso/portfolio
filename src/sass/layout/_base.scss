@@ -30,7 +30,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: $palette-font;
   font-weight: $font-weight;
   line-height: 1.5;
@@ -47,6 +48,16 @@ h2 {
   border-bottom: solid $size-b-width $palette-font;
   font-weight: $font-weight-bold;
   font-size: 1.65rem;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -ms-max-content;
+  width: max-content;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+  font-size: 1.05rem;
   text-transform: uppercase;
   width: -moz-max-content;
   width: -webkit-max-content;

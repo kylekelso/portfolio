@@ -29,11 +29,21 @@
     opacity: 0;
 
     section {
+      display: flex;
+      flex-wrap: wrap;
       margin: 1rem 0;
+      align-items: center;
+      justify-content: center;
+
       img {
         border-radius: $size-b-radius;
         width: 100%;
+        margin-bottom: 1rem;
       }
     }
+  }
+
+  #projects {
+    width: 65rem;
   }
 }

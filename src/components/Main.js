@@ -1,5 +1,7 @@
 import React from "react"
-import resume from "../assets/images/KKelso-Resume.jpg"
+import resume from "../assets/images/KKelso-Resume.png"
+import pollsterFront from "../assets/images/Pollster - Frontpage.png"
+import warblerFront from "../assets/images/Warbler - Frontpage.png"
 import closeIcon from "../assets/images/gatsby-icon.png"
 
 class Main extends React.Component {
@@ -37,22 +39,24 @@ class Main extends React.Component {
           {/* multiple sections for each project. Show image and technology used in each one. */}
           <section className="half">
             {/* vote app */}
+            <img src={pollsterFront} alt="" />
             <a
               href="http://voter.kyle-kelso.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Voter - Voting and statistics
+              Visit Pollster
             </a>
           </section>
           <section className="half">
             {/* twitter clone app */}
+            <img src={warblerFront} alt="" />
             <a
               href="http://warbler.kyle-kelso.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Warbler - A twitter clone
+              Visit Warbler
             </a>
           </section>
         </div>
@@ -66,9 +70,14 @@ class Main extends React.Component {
           <h2>About</h2>
           <section>
             <p>
-              Hello! I am Kyle. I love to make websites and such! Feel free to
-              contact me about any job inquries!
+              Hello there! My name is Kyle. I am a self taught Web Developer
+              with a heavy background in IT. Web development has given me a
+              chance to really tap into my desire of solving problems while also
+              letting me be creative. I am currently open for new and exciting
+              opportunities. The best way to reach me is through email:
             </p>
+            <br />
+            <h3>kyle.kelso@outlook.com</h3>
           </section>
         </div>
         <div

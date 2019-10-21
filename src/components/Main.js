@@ -1,4 +1,5 @@
 import React from "react"
+import { MdClose } from "react-icons/md"
 import resume from "../assets/images/KKelso-Resume.png"
 import pollsterFront from "../assets/images/Pollster - Frontpage.png"
 import warblerFront from "../assets/images/Warbler - Frontpage.png"
@@ -8,7 +9,8 @@ class Main extends React.Component {
   createCloseButton() {
     return (
       <button className="close-btn" onClick={this.props.pageClose}>
-        <img src={closeIcon} alt="" />
+        {/* <img src={closeIcon} alt="" /> */}
+        <MdClose size="45" />
       </button>
     )
   }

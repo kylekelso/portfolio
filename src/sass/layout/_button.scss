@@ -39,13 +39,10 @@ a {
   &.close-btn {
     box-shadow: none;
     position: absolute;
-    padding: 12px 12px 0 12px;
-    height: 56px;
+    height: 45px;
+    width: 45px;
+    padding: 0;
     top: 0;
     right: 0;
-    img {
-      width: 32px;
-      height: 32px;
-    }
   }
 }

@@ -1,8 +1,8 @@
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-button,
-a {
+a.download-btn,
+button {
   @include vendor("appearance", "none");
   @include vendor(
     "transition",
@@ -38,11 +38,46 @@ a {
 
   &.close-btn {
     box-shadow: none;
+    margin-top: 6px;
+    margin-right: 6px;
     position: absolute;
     height: 45px;
     width: 45px;
     padding: 0;
     top: 0;
     right: 0;
+  }
+
+  &.download-btn {
+    box-shadow: none;
+    margin-top: 6px;
+    margin-right: 51px;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    top: 0;
+    right: 0;
+    svg {
+      margin-top: 5px;
+    }
+  }
+
+  &.icon-btn {
+    box-shadow: none;
+    position: absolute;
+    margin-right: 6px;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+
+    &.right {
+      right: 0;
+      margin-right: 6px;
+    }
+    &.left {
+      left: 0;
+      margin-left: 6px;
+    }
   }
 }

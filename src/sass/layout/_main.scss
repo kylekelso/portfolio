@@ -25,7 +25,8 @@
     width: 40rem;
     max-width: 100%;
     background-color: transparentize($palette-bg-dark, 0.25);
-    border-radius: $size-b-radius;
+
+    border: 1px solid white;
     opacity: 0;
 
     section {
@@ -35,10 +36,26 @@
       align-items: center;
       justify-content: center;
 
+      a {
+        width: calc(80% - 45px);
+        margin: 1rem 0 0 0;
+        border-top-left-radius: $size-b-radius;
+        border-top-right-radius: $size-b-radius;
+      }
+      a > img,
       img {
-        border-radius: $size-b-radius;
         width: 100%;
-        margin-bottom: 1rem;
+        display: block;
+      }
+
+      #projDesc {
+        //background-color: $palette-bg;
+        width: calc(80% - 45px);
+        padding: 10px;
+        border-bottom-left-radius: $size-b-radius;
+        border-bottom-right-radius: $size-b-radius;
+        border: 1px solid white;
+        border-top: none;
       }
     }
   }

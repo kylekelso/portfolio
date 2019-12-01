@@ -72,6 +72,10 @@ h3 {
   width: -webkit-max-content;
   width: -ms-max-content;
   width: max-content;
+  &.subTitle {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+  }
 }
 
 h4 {
@@ -79,8 +83,8 @@ h4 {
 }
 
 p {
-  line-height: 1.2;
-  font-size: 0.9rem;
+  line-height: 1.4;
+  font-size: 1.05rem;
   letter-spacing: $font-spacing-sm;
 }
 

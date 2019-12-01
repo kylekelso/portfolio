@@ -62,22 +62,10 @@ button {
       margin-top: 5px;
     }
   }
+}
 
-  &.icon-btn {
-    box-shadow: none;
-    position: absolute;
-    margin-right: 6px;
-    height: 45px;
-    width: 45px;
-    padding: 0;
-
-    &.right {
-      right: 0;
-      margin-right: 6px;
-    }
-    &.left {
-      left: 0;
-      margin-left: 6px;
-    }
-  }
+a.icon-link {
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+  color: $palette-font;
 }

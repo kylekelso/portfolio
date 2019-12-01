@@ -2,6 +2,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 a.download-btn,
+a.link-btn,
 button {
   @include vendor("appearance", "none");
   @include vendor(
@@ -63,21 +64,31 @@ button {
     }
   }
 
-  &.icon-btn {
-    box-shadow: none;
-    position: absolute;
-    margin-right: 6px;
-    height: 45px;
-    width: 45px;
-    padding: 0;
-
-    &.right {
-      right: 0;
-      margin-right: 6px;
-    }
-    &.left {
-      left: 0;
-      margin-left: 6px;
-    }
+  &.link-btn {
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 18px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: $font-weight-bold;
   }
+  &.link-btn:nth-of-type(odd) {
+    margin-left: calc(50% - 110px);
+  }
+  &.link-btn:nth-of-type(even) {
+    margin-right: calc(50% - 110px);
+  }
+}
+
+a {
+  @include vendor(
+    "transition",
+    "background-color #{$duration-transistion} ease-in-out, color #{$duration-transistion} ease-in-out"
+  );
+  color: $palette-font;
+}
+
+a.github-btn:hover {
+  color: $palette-fg;
 }

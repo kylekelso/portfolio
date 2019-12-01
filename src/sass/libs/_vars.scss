@@ -8,16 +8,16 @@ $size-ele-height: 2.75rem;
 $size-ele-margin: 2rem;
 
 $font-main: ("Raleway", sans-serif);
-$font-secondary: ("Courier New", monospace);
+$font-secondary: ("Open Sans", sans-serif);
 $font-weight: 400;
 $font-weight-bold: 600;
 $font-spacing: 0.2rem;
-$font-spacing-sm: 0.05rem;
+$font-spacing-sm: 0.1rem;
 $font-heading: 0.5rem;
 
 $palette-bg-dark: rgb(35, 51, 66);
 $palette-bg: rgb(44, 62, 80);
 $palette-fg: rgb(76, 161, 175);
 $palette-font: rgb(255, 255, 255);
-$palette-hover: rgba(255, 255, 255, 0.075);
-$palette-active: rgba(255, 255, 255, 0.175);
+$palette-hover: rgba(76, 161, 175, 0.75);
+$palette-active: rgba(255, 255, 255, 0.85);

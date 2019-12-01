@@ -30,7 +30,9 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   color: $palette-font;
   font-weight: $font-weight;
   line-height: 1.5;
@@ -43,6 +45,14 @@ h2 {
   }
 }
 
+li {
+  h3,
+  h4,
+  h5 {
+    display: inline;
+  }
+}
+
 h2 {
   border-bottom: solid $size-b-width $palette-font;
   font-weight: $font-weight-bold;
@@ -52,6 +62,30 @@ h2 {
   width: -webkit-max-content;
   width: -ms-max-content;
   width: max-content;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -ms-max-content;
+  width: max-content;
+  &.subTitle {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+  }
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 1.05rem;
+  letter-spacing: $font-spacing-sm;
 }
 
 @include breakpoint(small) {

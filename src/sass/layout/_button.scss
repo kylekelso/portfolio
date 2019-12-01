@@ -1,6 +1,7 @@
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
+a.download-btn,
 button {
   @include vendor("appearance", "none");
   @include vendor(
@@ -37,14 +38,34 @@ button {
 
   &.close-btn {
     box-shadow: none;
+    margin-top: 6px;
+    margin-right: 6px;
     position: absolute;
-    padding: 12px 12px 0 12px;
-    height: 56px;
+    height: 45px;
+    width: 45px;
+    padding: 0;
     top: 0;
     right: 0;
-    img {
-      width: 32px;
-      height: 32px;
+  }
+
+  &.download-btn {
+    box-shadow: none;
+    margin-top: 6px;
+    margin-right: 51px;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    top: 0;
+    right: 0;
+    svg {
+      margin-top: 5px;
     }
   }
+}
+
+a.icon-link {
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+  color: $palette-font;
 }

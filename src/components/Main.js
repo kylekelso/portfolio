@@ -6,7 +6,13 @@ import {
   MdChevronRight,
 } from "react-icons/md"
 import { FaExternalLinkSquareAlt } from "react-icons/fa"
-import { DiReact, DiNodejsSmall, DiMongodb } from "react-icons/di"
+import {
+  DiReact,
+  DiNodejsSmall,
+  DiMongodb,
+  DiGithubBadge,
+  DiGit,
+} from "react-icons/di"
 import resume from "../assets/images/KKelso-Resume.png"
 import resumePDF from "../assets/docs/KKelso.Resume.pdf"
 import pollsterFront from "../assets/images/Pollster - Frontpage.png"
@@ -47,9 +53,12 @@ class Main extends React.Component {
       <div id="main" className={timers.header ? "transitioned" : ""}>
         <div
           id="resume"
-          className={`${pageType === "resume" ? "active" : ""} ${
-            timers.page ? "transitioned" : ""
-          }`}
+          className={
+            "modal " +
+            `${pageType === "resume" ? "active" : ""} ${
+              timers.page ? "transitioned" : ""
+            }`
+          }
         >
           <a className="download-btn" href={resumePDF}>
             <MdPictureAsPdf size="35" />
@@ -62,30 +71,24 @@ class Main extends React.Component {
         </div>
         <div
           id="projects"
-          className={`${pageType === "projects" ? "active" : ""} ${
-            timers.page ? "transitioned" : ""
-          }`}
+          className={
+            "modal " +
+            `${pageType === "projects" ? "active" : ""} ${
+              timers.page ? "transitioned" : ""
+            }`
+          }
         >
           {this.createCloseButton()}
-          <section>
-            <h3>Technologies: </h3>
-            <DiMongodb size="55" />
-            <DiReact size="55" />
-            <DiNodejsSmall size="55" />
-          </section>
-          <section>
-            <h4>
-              Modules: D3, Mongoose, Passport, Redux, Ant Design, BootStrap etc.
-            </h4>
-          </section>
-          <h2>Projects</h2>
+
           {/* multiple sections for each project. Show technology used in each one. */}
-          <section className="leftAlign">
-            <h3 className="subTitle">Pollster</h3>
-            <a className="icon-link" href="http://voter.kyle-kelso.com">
-              <FaExternalLinkSquareAlt size="22" />
+          <section>
+            <a className="github-btn" href="">
+              <DiGithubBadge size="65" />
             </a>
-            <br />
+            <h2>Projects</h2>
+          </section>
+          <section>
+            <h3>Pollster</h3>
             <p>
               A website dedicated to creating polls and voting. Started this
               project as a way to get practice in data-driven modules like D3
@@ -93,13 +96,13 @@ class Main extends React.Component {
               Bootstrap and Ant Design. As the project progressed I learned
               about unit testing with Chai Mocha libaries.
             </p>
-          </section>
-          <section className="leftAlign">
-            <h3 className="subTitle">Warbler</h3>
-            <a className="icon-link" href="http://warbler.kyle-kelso.com">
-              <FaExternalLinkSquareAlt size="22" />
+            <a className="link-btn" href="http://voter.kyle-kelso.com">
+              Site
             </a>
-            <br />
+            <a className="link-btn" href="http://voter.kyle-kelso.com">
+              Code
+            </a>
+            <h3>Warbler</h3>
             <p>
               Can be described as a Twitter clone. The beginning of this project
               was created alongside a Udemy course by Colt Steele. I've done
@@ -107,37 +110,51 @@ class Main extends React.Component {
               understanding of RESTful practices when building APIs has been a
               focus throughout this project.
             </p>
+            <a className="link-btn" href="http://warbler.kyle-kelso.com">
+              Site
+            </a>
+            <a className="link-btn" href="http://warbler.kyle-kelso.com">
+              Code
+            </a>
           </section>
         </div>
         <div
           id="about"
-          className={`${pageType === "about" ? "active" : ""} ${
-            timers.page ? "transitioned" : ""
-          }`}
+          className={
+            "modal " +
+            `${pageType === "about" ? "active" : ""} ${
+              timers.page ? "transitioned" : ""
+            }`
+          }
         >
           {this.createCloseButton()}
           <h2>About</h2>
           <section>
+            <p>Hello!</p>
             <p>
-              Hello there! My name is Kyle. I am a self taught Web Developer
-              with a heavy background in IT. Web development has given me a
-              chance to really tap into my desire of solving problems while also
-              letting me be creative. Whenever I'm creating projects on my own
-              free time, I frequently browse for different libaries that could
-              be included just for experimentation and getting use to learning
-              new technologies quickly. I hope to keep learning throughout this
+              My name is Kyle. I am a self taught Web Developer with a heavy
+              background in IT. Web development has given me a chance to really
+              tap into my desire of solving problems while also letting me be
+              creative. Whenever I'm creating projects on my own free time, I
+              frequently browse for different libaries that could be included
+              just for experimentation and getting use to learning new
+              technologies quickly. I hope to keep learning throughout this
               career.
-              <br />
-              <br />I am currently open for new opportunities. The best way to
-              reach me is through email at Kyle.Kelso@Outlook.com
+            </p>
+            <p>
+              I am currently open for new opportunities. The best way to reach
+              me is through email at Kyle.Kelso@Outlook.com
             </p>
           </section>
         </div>
         <div
           id="contact"
-          className={`${pageType === "contact" ? "active" : ""} ${
-            timers.page ? "transitioned" : ""
-          }`}
+          className={
+            "modal " +
+            `${pageType === "contact" ? "active" : ""} ${
+              timers.page ? "transitioned" : ""
+            }`
+          }
         >
           {this.createCloseButton()}
           <h2>Contact</h2>

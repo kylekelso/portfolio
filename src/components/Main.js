@@ -88,7 +88,8 @@ class Main extends React.Component {
             <h2>Projects</h2>
           </section>
           <section>
-            <h3>Pollster</h3>
+            <h3>Pollster -&nbsp;</h3>
+            <h3 className="subTitle">MERN Stack with D3</h3>
             <p>
               A website dedicated to creating polls and voting. Started this
               project as a way to get practice in data-driven modules like D3
@@ -99,10 +100,14 @@ class Main extends React.Component {
             <a className="link-btn" href="http://voter.kyle-kelso.com">
               Site
             </a>
-            <a className="link-btn" href="http://voter.kyle-kelso.com">
+            <a
+              className="link-btn"
+              href="https://github.com/kylekelso/pollster"
+            >
               Code
             </a>
-            <h3>Warbler</h3>
+            <h3>Warbler -&nbsp;</h3>
+            <h3 className="subTitle">MERN Stack</h3>
             <p>
               Can be described as a Twitter clone. The beginning of this project
               was created alongside a Udemy course by Colt Steele. I've done
@@ -113,7 +118,7 @@ class Main extends React.Component {
             <a className="link-btn" href="http://warbler.kyle-kelso.com">
               Site
             </a>
-            <a className="link-btn" href="http://warbler.kyle-kelso.com">
+            <a className="link-btn" href="https://github.com/kylekelso/warbler">
               Code
             </a>
           </section>

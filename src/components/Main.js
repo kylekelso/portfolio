@@ -1,44 +1,10 @@
 import React from "react"
-import {
-  MdClose,
-  MdPictureAsPdf,
-  MdChevronLeft,
-  MdChevronRight,
-} from "react-icons/md"
-import { FaExternalLinkSquareAlt } from "react-icons/fa"
-import {
-  DiReact,
-  DiNodejsSmall,
-  DiMongodb,
-  DiGithubBadge,
-  DiGit,
-} from "react-icons/di"
+import { MdClose, MdPictureAsPdf } from "react-icons/md"
+import { DiGithubBadge } from "react-icons/di"
 import resume from "../assets/images/KKelso-Resume.png"
 import resumePDF from "../assets/docs/KKelso.Resume.pdf"
-import pollsterFront from "../assets/images/Pollster - Frontpage.png"
-import warblerFront from "../assets/images/Warbler - Frontpage.png"
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.projects = [
-      {
-        href: "http://voter.kyle-kelso.com",
-        hrefText: "Visit Pollster",
-        description:
-          "Pollster is a website dedicated to creating polls and voting. Includes signup and login authentication and settings to customize each poll.",
-        img: pollsterFront,
-      },
-      {
-        href: "http://warbler.kyle-kelso.com",
-        hrefText: "Visit Warbler",
-        description: "Warbler can be described as a Twitter clone.",
-        img: warblerFront,
-      },
-    ]
-  }
-
   createCloseButton() {
     return (
       <button className="close-btn" onClick={this.props.pageClose}>
@@ -82,7 +48,7 @@ class Main extends React.Component {
 
           {/* multiple sections for each project. Show technology used in each one. */}
           <section>
-            <a className="github-btn" href="">
+            <a className="github-btn" href="https://github.com/kylekelso">
               <DiGithubBadge size="65" />
             </a>
             <h2>Projects</h2>
@@ -167,11 +133,19 @@ class Main extends React.Component {
             <ul>
               <li>
                 <h3>Email -</h3>&nbsp;
-                <h4>Kyle.Kelso@Outlook.com</h4>
+                <h4>
+                  <a href="mailto:kyle.kelso@outlook.com" target="_top">
+                    Kyle.Kelso@Outlook.com
+                  </a>
+                </h4>
               </li>
               <li>
                 <h3>Github -</h3>&nbsp;
-                <h4>https://github.com/kylekelso</h4>
+                <h4>
+                  <a href="https://github.com/kylekelso">
+                    https://github.com/kylekelso
+                  </a>
+                </h4>
               </li>
             </ul>
           </section>

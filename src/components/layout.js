@@ -20,8 +20,9 @@ const Layout = ({ children }) => (
       <>
         <Helmet title={data.site.siteMetadata.title}>
           <html lang="en" />
+          <link rel="icon" href="" />
         </Helmet>
-        <div>{children}</div>
+        <div id="layout">{children}</div>
       </>
     )}
   />

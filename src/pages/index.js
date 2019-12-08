@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 
 import Header from "../components/Header"
-import Main from "../components/Main"
+import Modal from "../components/Modal"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class IndexPage extends React.Component {
           className={`root ${pageStatus.open ? "pageOpen" : ""} ${loading}`}
         >
           <Header pageOpen={this.handlePageOpen} timer={timers.header} />
-          <Main
+          <Modal
             pageClose={this.handlePageClose}
             pageType={pageStatus.type}
             timers={timers}

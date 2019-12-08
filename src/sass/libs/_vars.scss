@@ -4,8 +4,8 @@ $duration-normal: 0.325s;
 
 $size-b-radius: 4px;
 $size-b-width: 1px;
-$size-ele-height: 2.75rem;
-$size-ele-margin: 2rem;
+$ele-size-lg: 3.75rem;
+$ele-size-md: 2.75rem;
 
 $font-main: ("Raleway", sans-serif);
 $font-secondary: ("Open Sans", sans-serif);
@@ -15,9 +15,15 @@ $font-spacing: 0.2rem;
 $font-spacing-sm: 0.1rem;
 $font-heading: 0.5rem;
 
+$font-size-xlg: 2.75rem;
+$font-size-lg: 2.2rem;
+$font-size-md: 1.65rem;
+$font-size-sm: 1.2rem;
+$font-size-xsm: 0.8rem;
+
 $palette-bg-dark: rgb(35, 51, 66);
 $palette-bg: rgb(44, 62, 80);
 $palette-fg: rgb(76, 161, 175);
-$palette-font: rgb(255, 255, 255);
+$palette-font: rgb(236, 237, 232);
 $palette-hover: rgba(76, 161, 175, 0.75);
-$palette-active: rgba(255, 255, 255, 0.85);
+$palette-active: rgba(237, 232, 223, 0.85);

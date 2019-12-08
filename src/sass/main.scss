@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600,700&display=swap");
 @import "libs/skel";
 @import "libs/vars";
 
@@ -20,14 +20,22 @@
   )
 );
 
+ul {
+  @include vendor("display", "flex");
+  li > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
 html {
   background-color: $palette-bg;
   color: $palette-font;
 }
 
-@import "layout/base";
+@import "layout/typography";
 @import "layout/container";
 @import "layout/header";
-@import "layout/main";
+@import "layout/modal";
 @import "layout/button";
 @import "layout/transitions";

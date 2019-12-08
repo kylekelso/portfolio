@@ -1,0 +1,71 @@
+@include breakpoint(xsmall) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+
+html {
+  font-family: $font-main;
+  font-weight: $font-weight;
+  color: $palette-font;
+}
+
+//Main title
+h1 {
+  font-weight: $font-weight;
+  letter-spacing: $font-spacing;
+  font-size: $font-size-xlg;
+  line-height: calc(#{$font-size-xlg} * 1.3);
+  span {
+    font-weight: $font-weight-bold;
+    color: $palette-fg;
+  }
+  @include breakpoint(small) {
+    font-size: $font-size-md;
+    line-height: calc(#{$font-size-md} * 1.3);
+  }
+}
+
+//titles in the modals
+h2 {
+  font-weight: $font-weight;
+  letter-spacing: $font-spacing;
+  font-size: $font-size-lg;
+  line-height: calc(#{$font-size-lg} * 1.3);
+  border-bottom: solid $size-b-width $palette-font;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -ms-max-content;
+  width: max-content;
+  @include breakpoint(small) {
+    font-size: $font-size-md;
+    line-height: calc(#{$font-size-md} * 1.3);
+  }
+}
+
+//used for section titles (projects and Contact pages)
+h3 {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-md;
+  line-height: calc(#{$font-size-md} * 1.3);
+  @include breakpoint(small) {
+    font-size: $font-size-sm;
+    line-height: calc(#{$font-size-sm} * 1.3);
+  }
+}
+
+button {
+  font-size: $font-size-xsm;
+}
+
+p {
+  font-family: $font-secondary;
+  font-weight: 300;
+  font-size: $font-size-sm;
+  line-height: calc(#{$font-size-sm} * 1.3);
+  @include breakpoint(small) {
+    font-size: $font-size-xsm;
+    line-height: calc(#{$font-size-xsm} * 1.3);
+  }
+}

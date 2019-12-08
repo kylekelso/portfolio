@@ -20,9 +20,9 @@
   )
 );
 
-ul {
-  @include vendor("display", "flex");
-  li > svg {
+ul > li {
+  float: left;
+  svg {
     margin-right: 5px;
     margin-left: 5px;
   }

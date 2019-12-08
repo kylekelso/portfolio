@@ -26,7 +26,7 @@
     max-width: 100%;
     background-color: transparentize($palette-bg-dark, 0.25);
 
-    border: 3px solid white;
+    box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
     opacity: 0;
 
     section {

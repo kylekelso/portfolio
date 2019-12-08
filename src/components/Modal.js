@@ -229,9 +229,7 @@ class Main extends React.Component {
           <section>
             <h3>Github</h3>
             <h4>
-              <a href="https://github.com/kylekelso">
-                https://github.com/kylekelso
-              </a>
+              <a href="https://github.com/kylekelso">github.com/kylekelso</a>
             </h4>
           </section>
         </div>

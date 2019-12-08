@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
           <link rel="icon" href="" />
         </Helmet>
-        <div>{children}</div>
+        <div id="layout">{children}</div>
       </>
     )}
   />

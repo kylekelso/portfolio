@@ -3,12 +3,10 @@ import React from "react"
 const Header = ({ pageOpen, timer }) => (
   <header id="header" className={timer ? "transitioned" : ""}>
     <div className="title">
-      <div className="inner">
-        <h1>
-          Hello, I'm <span>Kyle Kelso</span>.
-        </h1>
-        <h1>A Self-taught Web Developer.</h1>
-      </div>
+      <h1>
+        Hello, I'm <span>Kyle Kelso</span>.
+      </h1>
+      <h1>A Self-taught Web Developer.</h1>
     </div>
     <nav>
       <ul>
